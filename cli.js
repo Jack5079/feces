@@ -1,2 +1,4 @@
 #!/usr/bin/env node
-require('.')().then(console.log)
+if (process.argv.includes('--massive')) {
+  require('.').massive().then(console.log)
+} else require('.')().then(console.log)
