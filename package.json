@@ -3,10 +3,10 @@
   "version": "1.1.1",
   "description": "Returns a piece of shit from r/poop",
   "main": "index.js",
-  "module": "esm.js",
-  "unpkg": "esm.js",
+  "module": "esm.mjs",
+  "unpkg": "esm.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.mjs"
   },
   "author": "Jack <hello@5079.ml> (5079.ml)",
   "license": "ISC",

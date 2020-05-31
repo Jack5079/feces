@@ -1,5 +1,5 @@
 // @ts-ignore
-import fetch from 'https://cdn.pika.dev/isomorphic-fetch'
+import fetch from 'isomorphic-fetch'
 
 /**
  * Get a piece of shit from r/poop.
