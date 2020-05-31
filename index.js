@@ -9,3 +9,8 @@ module.exports = () => fetch('https://api.allorigins.win/get?url=https://www.red
   .then(res => res.json())
   .then(({ contents }) => JSON.parse(contents))
   .then(([{ data: { children: [{ data: { url } }] } }]) => url)
+
+module.exports.massive = () => fetch('https://api.allorigins.win/get?url=https://www.reddit.com/r/Phonkers/random.json')
+  .then(res => res.json())
+  .then(({ contents }) => JSON.parse(contents))
+  .then(([{ data: { children: [{ data: { url } }] } }]) => url)
