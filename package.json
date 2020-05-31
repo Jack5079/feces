@@ -12,10 +12,7 @@
   "license": "ISC",
   "homepage": "https://github.com/Jack5079/feces#readme",
   "bugs": "https://github.com/Jack5079/feces/issues",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Jack5079/feces.git"
-  },
+  "repository": "github:Jack5079/feces",
   "bin": "cli.js",
   "dependencies": {
     "@types/node": "^14.0.6",
