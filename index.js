@@ -5,6 +5,7 @@ const fetch = require('isomorphic-fetch')
  * 
  * @returns {Promise<string>} A URL of a piece of shit.
  */
-module.exports = () => fetch('https://www.reddit.com/r/poop/random.json')
+module.exports = () => fetch('https://api.allorigins.win/get?url=https://www.reddit.com/r/poop/random.json')
   .then(res => res.json())
+  .then(({ contents }) => JSON.parse(contents))
   .then(([{ data: { children: [{ data: { url } }] } }]) => url)
