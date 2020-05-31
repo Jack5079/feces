@@ -30,6 +30,7 @@
         border-radius: 1em;
         border: 0.3em solid darkgray;
         padding: 1em;
+        margin-bottom: 0;
       }
     </style>
   </head>
@@ -45,9 +46,14 @@
     <h2><a href="https://npm.im/feces">Library</a></h2>
     <p>Feces works with both ESM Modules and CommonJS. We aren't shitty.</p>
     <p>The function returns a promise that resolves to the URL.</p>
-    <pre>
-import feces from 'https://cdn.pika.dev/feces'
-feces().then(console.log) // log shit to the console</pre>
+<pre>
+  import feces from 'https://cdn.pika.dev/feces'
+  feces().then(console.log)
+</pre>
+<script type="module">
+  import feces from 'https://cdn.pika.dev/feces' 
+  feces().then(url=>document.querySelector('pre').innerText = 'import feces from \'https://cdn.pika.dev/feces\'\nfeces().then(console.log) // ' + url)
+</script>
   <h2><a href="https://discord.com/api/oauth2/authorize?client_id=581254343710212128&permissions=0&scope=bot">Discord Bot</a></h2>
   <p>There's a Discord bot for this shit too. Activate it by saying "nobody asked" in chat.</p>
   <h2>Mastodon Bot</h2>
