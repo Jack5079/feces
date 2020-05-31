@@ -6,8 +6,6 @@ import fetch from 'isomorphic-fetch'
  * 
  * @returns {Promise<string>} A URL of a piece of shit.
  */
-async function shit () {
-  const [{ data: { children: [{ data: { url } }] } }] = await fetch(globalThis.navigator ? `https://api.allorigins.win/get?url=${encodeURIComponent('https://www.reddit.com/r/poop/random.json')}` : 'https://www.reddit.com/r/poop/random.json').then(res => res.json())
-  return url
-}
-export default shit
+export default () => fetch('https://www.reddit.com/r/poop/random.json')
+  .then(res => res.json())
+  .then(([{ data: { children: [{ data: { url } }] } }]) => url)
