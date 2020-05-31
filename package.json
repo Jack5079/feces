@@ -15,7 +15,9 @@
   "repository": "github:Jack5079/feces",
   "bin": "cli.js",
   "dependencies": {
-    "@types/node": "^14.0.6",
     "isomorphic-fetch": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.6"
   }
 }
